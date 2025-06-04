@@ -209,7 +209,7 @@ def tela_principal():
     principal = tk.Tk()
     principal.title("Sistema de Controle de Currículos")
 
-    tk.Label(principal, text="Bem-vindo ao Sistema de Controle de Currículos").pack(pady=10)
+    tk.Label(principal, text="Bem-vindo ao Sistema de Curriculos da Tec-Info").pack(pady=10)
 
     tk.Button(principal, text="Adicionar Currículo", width=30, command=abrir_adicionar).pack(pady=5)
     tk.Button(principal, text="Listar/Editar/Remover Currículos", width=30, command=abrir_listar).pack(pady=5)
