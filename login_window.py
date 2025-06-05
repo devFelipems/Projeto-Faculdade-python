@@ -9,7 +9,7 @@ class LoginWindow:
         self.on_success = on_success
         self.master.title("Tec-Info - Login")
         self.master.geometry("350x250")
-        self.master.minsize(350, 250)  # Define tamanho mínimo para telas pequenas
+        self.master.minsize(350, 250)  
         self.master.resizable(True, True)
         self.setup_style()
         self.create_widgets()
