@@ -7,7 +7,7 @@ class RegistrationWindow:
         self.top = tk.Toplevel(master)
         self.top.title("Cadastro de Usuário - Tec-Info")
         self.top.geometry("350x300")
-        self.top.minsize(350, 300)  # Define tamanho mínimo para evitar corte de informações
+        self.top.minsize(350, 300) 
         self.top.resizable(True, True)
         self.setup_style()
         self.create_widgets()
