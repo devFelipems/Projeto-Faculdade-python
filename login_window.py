@@ -16,7 +16,6 @@ class LoginWindow:
         self.configure_grid()
 
     def configure_grid(self):
-        # Garante que o frame principal se expanda
         self.master.columnconfigure(0, weight=1)
         self.master.rowconfigure(0, weight=1)
 
