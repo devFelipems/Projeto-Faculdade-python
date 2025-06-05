@@ -1,6 +1,6 @@
 # Tec-Info – Sistema de Currículos
 
-O **Tec-Info – Sistema de Currículos** é um protótipo funcional de uma aplicação para o gerenciamento de currículos, desenvolvido como trabalho acadêmico. A aplicação foi implementada em Python utilizando a biblioteca Tkinter (com TTK) para a interface gráfica e SQLite para o armazenamento dos dados. O sistema é modularizado, contando com telas de login, cadastro, gerenciamento (CRUD) e funcionalidades avançadas como filtro, ordenação e alternância entre modos claro e escuro.
+O **Tec-Info – Sistema de Currículos** é um protótipo funcional de uma aplicação para o gerenciamento de currículos. A aplicação foi implementada em Python utilizando a biblioteca Tkinter (com TTK) para a interface gráfica e SQLite para o armazenamento dos dados. O sistema é modularizado, contando com telas de login, cadastro, gerenciamento (CRUD) e funcionalidades avançadas como filtro, ordenação e alternância entre modos claro e escuro.
 
 ## Funcionalidades
 
