@@ -23,7 +23,7 @@ class MainWindow:
     def __init__(self, username, db_manager):
         self.username = username
         self.db_manager = db_manager
-        self.dark_mode = False  # Modo inicial: claro
+        self.dark_mode = False
         self.root = tk.Tk()
         self.root.title("Tec-Info - Sistema de Currículos")
         self.root.geometry("1000x700")
@@ -62,13 +62,11 @@ class MainWindow:
             self.root.configure(background="#2E2E2E")
 
     def create_widgets(self):
-        # Frame superior com mensagem de boas-vindas
         top_frame = ttk.Frame(self.root, padding=10)
         top_frame.pack(fill="x", pady=10)
         welcome_label = ttk.Label(top_frame, text=f"Bem-vindo, {self.username}!", font=("Helvetica", 16))
         welcome_label.pack()
 
-        # Bloco de pesquisa simples
         search_frame = ttk.Frame(self.root, padding=10)
         search_frame.pack(fill="x", padx=20)
         search_label = ttk.Label(search_frame, text="Pesquisar:")
@@ -80,7 +78,6 @@ class MainWindow:
         clear_search_button = ttk.Button(search_frame, text="Limpar filtros", command=self.populate_treeview)
         clear_search_button.pack(side="left", padx=5)
 
-        # Bloco de filtro e ordenação avançada
         advanced_frame = ttk.Frame(self.root, padding=10)
         advanced_frame.pack(fill="x", padx=20)
         filter_label = ttk.Label(advanced_frame, text="Filtrar por:")
@@ -136,7 +133,7 @@ class MainWindow:
         self.btn_details = ttk.Button(buttons_frame, text="Visualizar Detalhes", command=self.open_detail_window)
         self.btn_details.grid(row=0, column=4, padx=5)
 
-        # Frame de listagem dos currículos (Treeview)
+        # Frame de listagem dos currículos
         list_frame = ttk.LabelFrame(self.root, text="Lista de Currículos", padding=10)
         list_frame.pack(fill="both", expand=True, padx=20, pady=10)
         columns = ("ID", "Nome", "Email", "Telefone", "Formação", "Experiência")
